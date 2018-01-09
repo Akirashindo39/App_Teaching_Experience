@@ -38,5 +38,19 @@ class ViewController: UIViewController {
         blankLabel.text = "You chose to get pasta!"
     }
     
+    @IBAction func changeColorToRed(sender: UIButton) {
+        view.backgroundColor = UIColor.redColor()
+    }
+    
+    
+    @IBAction func changeColorToGreen(sender: UIButton) {
+        view.backgroundColor = UIColor.greenColor()
+    }
+    
+    
+    @IBAction func changeColorToWhite(sender: UIButton) {
+        view.backgroundColor = UIColor.whiteColor()
+    }
+    
 }
 

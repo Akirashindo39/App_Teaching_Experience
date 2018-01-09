@@ -57,6 +57,27 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R2-pp-GlY">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Red"/>
+                                <connections>
+                                    <action selector="changeColorToRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZa-GX-efz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lE5-Oz-6ER">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Green"/>
+                                <connections>
+                                    <action selector="changeColorToGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W9e-cu-Yp6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3je-ga-EAe">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="White"/>
+                                <connections>
+                                    <action selector="changeColorToWhite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="43V-Lh-Ape"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -64,16 +85,23 @@
                             <constraint firstItem="maQ-rG-sWw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Blp-uh-DzX"/>
                             <constraint firstItem="9HX-xn-frx" firstAttribute="top" secondItem="Jyk-7u-Xjv" secondAttribute="bottom" constant="30" id="CAG-kx-Xqp"/>
                             <constraint firstItem="9HX-xn-frx" firstAttribute="leading" secondItem="7r7-xs-5pP" secondAttribute="trailing" constant="50" id="CrP-SV-Hx0"/>
+                            <constraint firstItem="3je-ga-EAe" firstAttribute="top" secondItem="maQ-rG-sWw" secondAttribute="bottom" constant="80" id="EuM-At-kQM"/>
                             <constraint firstItem="maQ-rG-sWw" firstAttribute="top" secondItem="9HX-xn-frx" secondAttribute="bottom" constant="80" id="HGu-YA-NeG"/>
                             <constraint firstItem="XjD-gZ-W33" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="L8Z-Lt-c3O"/>
                             <constraint firstItem="nIQ-Me-a2A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Oxa-Qs-vhc"/>
+                            <constraint firstItem="lE5-Oz-6ER" firstAttribute="top" secondItem="maQ-rG-sWw" secondAttribute="bottom" constant="80" id="Plu-Ae-ieJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Jyk-7u-Xjv" secondAttribute="trailing" id="Qzt-eo-8Vq"/>
+                            <constraint firstItem="6R2-pp-GlY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="b3j-YK-cis"/>
+                            <constraint firstItem="lE5-Oz-6ER" firstAttribute="leading" secondItem="6R2-pp-GlY" secondAttribute="trailing" constant="81" id="dLd-J5-wMk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nIQ-Me-a2A" secondAttribute="trailing" id="dii-De-vmr"/>
                             <constraint firstItem="7r7-xs-5pP" firstAttribute="top" secondItem="Jyk-7u-Xjv" secondAttribute="bottom" constant="30" id="fAD-6h-RND"/>
                             <constraint firstItem="maQ-rG-sWw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fPu-0F-Q8i"/>
+                            <constraint firstItem="6R2-pp-GlY" firstAttribute="top" secondItem="maQ-rG-sWw" secondAttribute="bottom" constant="80" id="gBU-Ec-6kV"/>
                             <constraint firstItem="XjD-gZ-W33" firstAttribute="top" secondItem="Jyk-7u-Xjv" secondAttribute="bottom" constant="30" id="kA3-eP-oYU"/>
                             <constraint firstItem="nIQ-Me-a2A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="m8S-Nn-9rw"/>
                             <constraint firstItem="Jyk-7u-Xjv" firstAttribute="top" secondItem="nIQ-Me-a2A" secondAttribute="bottom" constant="30" id="ozb-HY-lEr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3je-ga-EAe" secondAttribute="trailing" constant="30" id="q8B-gA-LBk"/>
+                            <constraint firstItem="3je-ga-EAe" firstAttribute="leading" secondItem="lE5-Oz-6ER" secondAttribute="trailing" constant="81" id="tZG-Ie-lMV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9HX-xn-frx" secondAttribute="trailing" constant="30" id="wVz-Hd-agA"/>
                             <constraint firstItem="7r7-xs-5pP" firstAttribute="leading" secondItem="XjD-gZ-W33" secondAttribute="trailing" constant="50" id="x5F-lq-pEq"/>
                         </constraints>
@@ -85,6 +113,9 @@
                                 <exclude reference="7r7-xs-5pP"/>
                                 <exclude reference="9HX-xn-frx"/>
                                 <exclude reference="maQ-rG-sWw"/>
+                                <exclude reference="6R2-pp-GlY"/>
+                                <exclude reference="lE5-Oz-6ER"/>
+                                <exclude reference="3je-ga-EAe"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Oxa-Qs-vhc"/>
@@ -103,6 +134,13 @@
                                 <exclude reference="CAG-kx-Xqp"/>
                                 <exclude reference="CrP-SV-Hx0"/>
                                 <exclude reference="wVz-Hd-agA"/>
+                                <exclude reference="b3j-YK-cis"/>
+                                <exclude reference="gBU-Ec-6kV"/>
+                                <exclude reference="Plu-Ae-ieJ"/>
+                                <exclude reference="dLd-J5-wMk"/>
+                                <exclude reference="EuM-At-kQM"/>
+                                <exclude reference="q8B-gA-LBk"/>
+                                <exclude reference="tZG-Ie-lMV"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -113,6 +151,9 @@
                                 <include reference="7r7-xs-5pP"/>
                                 <include reference="9HX-xn-frx"/>
                                 <include reference="maQ-rG-sWw"/>
+                                <include reference="6R2-pp-GlY"/>
+                                <include reference="lE5-Oz-6ER"/>
+                                <include reference="3je-ga-EAe"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Oxa-Qs-vhc"/>
@@ -131,6 +172,13 @@
                                 <include reference="CAG-kx-Xqp"/>
                                 <include reference="CrP-SV-Hx0"/>
                                 <include reference="wVz-Hd-agA"/>
+                                <include reference="b3j-YK-cis"/>
+                                <include reference="gBU-Ec-6kV"/>
+                                <include reference="Plu-Ae-ieJ"/>
+                                <include reference="dLd-J5-wMk"/>
+                                <include reference="EuM-At-kQM"/>
+                                <include reference="q8B-gA-LBk"/>
+                                <include reference="tZG-Ie-lMV"/>
                             </mask>
                         </variation>
                     </view>
