@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+// Instance datas for this class
     internal static var sandwichCountVar = 0
     internal static var hamburgerCountVar = 0
     internal static var pastaCountVar = 0
@@ -31,6 +31,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // All these groups of code basically increments or decrements the number in th label when the stepper is tapped
     @IBOutlet weak var sandwichCount: UILabel!
     @IBOutlet weak var sandwichStepper: UIStepper!
     
@@ -55,20 +57,19 @@ class ViewController: UIViewController {
         ViewController.pastaCountVar = Int(sender.value)
     }
     
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var menuLabel: UILabel!
-
     
+
+    // These methods changes the background colors of the screen
     @IBAction func changeColorToRed(sender: UIButton) {
         view.backgroundColor = UIColor.redColor()
     }
     
-    
     @IBAction func changeColorToGreen(sender: UIButton) {
         view.backgroundColor = UIColor.greenColor()
     }
-    
     
     @IBAction func changeColorToWhite(sender: UIButton) {
         view.backgroundColor = UIColor.whiteColor()
