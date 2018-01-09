@@ -1,0 +1,2 @@
+# App_Teaching_Experience
+This keeps track of all the projects I made when I taught iOS app development to the AP Computer Science class. I made a project called "Food Tracker" to teach the class. The class tried to make the app through two weeks of lecturing. The following is the powerpoint that I made for my lectures: https://docs.google.com/presentation/d/1NQkYMdvFCxnco8tz25vfyUmrTX9et6VG6fk7VNU-Mhs/edit?usp=sharing
