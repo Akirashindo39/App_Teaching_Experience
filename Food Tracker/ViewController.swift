@@ -22,20 +22,20 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var menuLabel: UILabel!
-    @IBOutlet weak var blankLabel: UILabel!
+    internal static var selectedMenuString = ""
     
     
     @IBAction func sandwichOrdered(sender: UIButton) {
-        blankLabel.text = "You chose to get a sandwich!"
+        ViewController.selectedMenuString = "You chose to get a sandwich!"
     }
     
     
     @IBAction func hamburgerOrdered(sender: UIButton) {
-        blankLabel.text = "You chose to get a hamburger!"
+        ViewController.selectedMenuString = "You chose to get a hamburger!"
     }
     
     @IBAction func pastaOrdered(sender: UIButton) {
-        blankLabel.text = "You chose to get pasta!"
+        ViewController.selectedMenuString = "You chose to get pasta!"
     }
     
     @IBAction func changeColorToRed(sender: UIButton) {
