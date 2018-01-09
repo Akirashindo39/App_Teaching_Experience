@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -33,16 +34,22 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Sandwich"/>
                                 <connections>
-                                    <action selector="sandwichOrdered:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fCJ-YJ-SsH"/>
+                                    <action selector="sandwichOrdered:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7s-2c-AiI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r7-xs-5pP">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Hamburger"/>
+                                <connections>
+                                    <action selector="hamburgerOrdered:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LfS-T8-ePI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HX-xn-frx">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Pasta"/>
+                                <connections>
+                                    <action selector="pastaOrdered:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KRi-gn-duo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blank Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maQ-rG-sWw">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -53,17 +60,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="maQ-rG-sWw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="4jn-Fd-sPV"/>
                             <constraint firstItem="Jyk-7u-Xjv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7e3-Un-j9h"/>
+                            <constraint firstItem="maQ-rG-sWw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Blp-uh-DzX"/>
                             <constraint firstItem="9HX-xn-frx" firstAttribute="top" secondItem="Jyk-7u-Xjv" secondAttribute="bottom" constant="30" id="CAG-kx-Xqp"/>
                             <constraint firstItem="9HX-xn-frx" firstAttribute="leading" secondItem="7r7-xs-5pP" secondAttribute="trailing" constant="50" id="CrP-SV-Hx0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="maQ-rG-sWw" secondAttribute="trailing" constant="100" id="FET-lP-YC6"/>
+                            <constraint firstItem="maQ-rG-sWw" firstAttribute="top" secondItem="9HX-xn-frx" secondAttribute="bottom" constant="80" id="HGu-YA-NeG"/>
                             <constraint firstItem="XjD-gZ-W33" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="L8Z-Lt-c3O"/>
                             <constraint firstItem="nIQ-Me-a2A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Oxa-Qs-vhc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Jyk-7u-Xjv" secondAttribute="trailing" id="Qzt-eo-8Vq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nIQ-Me-a2A" secondAttribute="trailing" id="dii-De-vmr"/>
                             <constraint firstItem="7r7-xs-5pP" firstAttribute="top" secondItem="Jyk-7u-Xjv" secondAttribute="bottom" constant="30" id="fAD-6h-RND"/>
-                            <constraint firstItem="maQ-rG-sWw" firstAttribute="top" secondItem="7r7-xs-5pP" secondAttribute="bottom" constant="80" id="fXp-wV-y7G"/>
+                            <constraint firstItem="maQ-rG-sWw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fPu-0F-Q8i"/>
                             <constraint firstItem="XjD-gZ-W33" firstAttribute="top" secondItem="Jyk-7u-Xjv" secondAttribute="bottom" constant="30" id="kA3-eP-oYU"/>
                             <constraint firstItem="nIQ-Me-a2A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="m8S-Nn-9rw"/>
                             <constraint firstItem="Jyk-7u-Xjv" firstAttribute="top" secondItem="nIQ-Me-a2A" secondAttribute="bottom" constant="30" id="ozb-HY-lEr"/>
@@ -90,9 +97,9 @@
                                 <exclude reference="kA3-eP-oYU"/>
                                 <exclude reference="fAD-6h-RND"/>
                                 <exclude reference="x5F-lq-pEq"/>
-                                <exclude reference="4jn-Fd-sPV"/>
-                                <exclude reference="FET-lP-YC6"/>
-                                <exclude reference="fXp-wV-y7G"/>
+                                <exclude reference="Blp-uh-DzX"/>
+                                <exclude reference="HGu-YA-NeG"/>
+                                <exclude reference="fPu-0F-Q8i"/>
                                 <exclude reference="CAG-kx-Xqp"/>
                                 <exclude reference="CrP-SV-Hx0"/>
                                 <exclude reference="wVz-Hd-agA"/>
@@ -118,9 +125,9 @@
                                 <include reference="kA3-eP-oYU"/>
                                 <include reference="fAD-6h-RND"/>
                                 <include reference="x5F-lq-pEq"/>
-                                <include reference="4jn-Fd-sPV"/>
-                                <include reference="FET-lP-YC6"/>
-                                <include reference="fXp-wV-y7G"/>
+                                <include reference="Blp-uh-DzX"/>
+                                <include reference="HGu-YA-NeG"/>
+                                <include reference="fPu-0F-Q8i"/>
                                 <include reference="CAG-kx-Xqp"/>
                                 <include reference="CrP-SV-Hx0"/>
                                 <include reference="wVz-Hd-agA"/>

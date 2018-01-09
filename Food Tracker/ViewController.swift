@@ -25,9 +25,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var blankLabel: UILabel!
     
     
+    @IBAction func sandwichOrdered(sender: UIButton) {
+        blankLabel.text = "You chose to get a sandwich!"
+    }
     
     
+    @IBAction func hamburgerOrdered(sender: UIButton) {
+        blankLabel.text = "You chose to get a hamburger!"
+    }
     
+    @IBAction func pastaOrdered(sender: UIButton) {
+        blankLabel.text = "You chose to get pasta!"
+    }
     
 }
 
