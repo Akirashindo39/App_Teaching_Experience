@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Food_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIQ-Me-a2A">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyk-7u-Xjv">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjD-gZ-W33">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Sandwich"/>
+                                <connections>
+                                    <action selector="sandwichOrdered:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fCJ-YJ-SsH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r7-xs-5pP">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Hamburger"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HX-xn-frx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Pasta"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blank Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maQ-rG-sWw">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="maQ-rG-sWw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="4jn-Fd-sPV"/>
+                            <constraint firstItem="Jyk-7u-Xjv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7e3-Un-j9h"/>
+                            <constraint firstItem="9HX-xn-frx" firstAttribute="top" secondItem="Jyk-7u-Xjv" secondAttribute="bottom" constant="30" id="CAG-kx-Xqp"/>
+                            <constraint firstItem="9HX-xn-frx" firstAttribute="leading" secondItem="7r7-xs-5pP" secondAttribute="trailing" constant="50" id="CrP-SV-Hx0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="maQ-rG-sWw" secondAttribute="trailing" constant="100" id="FET-lP-YC6"/>
+                            <constraint firstItem="XjD-gZ-W33" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="L8Z-Lt-c3O"/>
+                            <constraint firstItem="nIQ-Me-a2A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Oxa-Qs-vhc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jyk-7u-Xjv" secondAttribute="trailing" id="Qzt-eo-8Vq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nIQ-Me-a2A" secondAttribute="trailing" id="dii-De-vmr"/>
+                            <constraint firstItem="7r7-xs-5pP" firstAttribute="top" secondItem="Jyk-7u-Xjv" secondAttribute="bottom" constant="30" id="fAD-6h-RND"/>
+                            <constraint firstItem="maQ-rG-sWw" firstAttribute="top" secondItem="7r7-xs-5pP" secondAttribute="bottom" constant="80" id="fXp-wV-y7G"/>
+                            <constraint firstItem="XjD-gZ-W33" firstAttribute="top" secondItem="Jyk-7u-Xjv" secondAttribute="bottom" constant="30" id="kA3-eP-oYU"/>
+                            <constraint firstItem="nIQ-Me-a2A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="m8S-Nn-9rw"/>
+                            <constraint firstItem="Jyk-7u-Xjv" firstAttribute="top" secondItem="nIQ-Me-a2A" secondAttribute="bottom" constant="30" id="ozb-HY-lEr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9HX-xn-frx" secondAttribute="trailing" constant="30" id="wVz-Hd-agA"/>
+                            <constraint firstItem="7r7-xs-5pP" firstAttribute="leading" secondItem="XjD-gZ-W33" secondAttribute="trailing" constant="50" id="x5F-lq-pEq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nIQ-Me-a2A"/>
+                                <exclude reference="Jyk-7u-Xjv"/>
+                                <exclude reference="XjD-gZ-W33"/>
+                                <exclude reference="7r7-xs-5pP"/>
+                                <exclude reference="9HX-xn-frx"/>
+                                <exclude reference="maQ-rG-sWw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Oxa-Qs-vhc"/>
+                                <exclude reference="dii-De-vmr"/>
+                                <exclude reference="m8S-Nn-9rw"/>
+                                <exclude reference="7e3-Un-j9h"/>
+                                <exclude reference="Qzt-eo-8Vq"/>
+                                <exclude reference="ozb-HY-lEr"/>
+                                <exclude reference="L8Z-Lt-c3O"/>
+                                <exclude reference="kA3-eP-oYU"/>
+                                <exclude reference="fAD-6h-RND"/>
+                                <exclude reference="x5F-lq-pEq"/>
+                                <exclude reference="4jn-Fd-sPV"/>
+                                <exclude reference="FET-lP-YC6"/>
+                                <exclude reference="fXp-wV-y7G"/>
+                                <exclude reference="CAG-kx-Xqp"/>
+                                <exclude reference="CrP-SV-Hx0"/>
+                                <exclude reference="wVz-Hd-agA"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="nIQ-Me-a2A"/>
+                                <include reference="Jyk-7u-Xjv"/>
+                                <include reference="XjD-gZ-W33"/>
+                                <include reference="7r7-xs-5pP"/>
+                                <include reference="9HX-xn-frx"/>
+                                <include reference="maQ-rG-sWw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Oxa-Qs-vhc"/>
+                                <include reference="dii-De-vmr"/>
+                                <include reference="m8S-Nn-9rw"/>
+                                <include reference="7e3-Un-j9h"/>
+                                <include reference="Qzt-eo-8Vq"/>
+                                <include reference="ozb-HY-lEr"/>
+                                <include reference="L8Z-Lt-c3O"/>
+                                <include reference="kA3-eP-oYU"/>
+                                <include reference="fAD-6h-RND"/>
+                                <include reference="x5F-lq-pEq"/>
+                                <include reference="4jn-Fd-sPV"/>
+                                <include reference="FET-lP-YC6"/>
+                                <include reference="fXp-wV-y7G"/>
+                                <include reference="CAG-kx-Xqp"/>
+                                <include reference="CrP-SV-Hx0"/>
+                                <include reference="wVz-Hd-agA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="blankLabel" destination="maQ-rG-sWw" id="GeC-j2-Qk4"/>
+                        <outlet property="menuLabel" destination="Jyk-7u-Xjv" id="7s2-0E-x3Y"/>
+                        <outlet property="titleLabel" destination="nIQ-Me-a2A" id="ymK-Hn-vjF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439.5" y="334.5"/>
+        </scene>
+    </scenes>
+</document>
